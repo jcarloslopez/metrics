@@ -1,0 +1,65 @@
+
+spec/support/api_helpers.rb,53
+module ApiHelpersApiHelpers1,0
+  def jsonjson2,0
+
+config/application.rb,152
+module BackendBackend9,0
+  class Application < Rails::ApplicationApplication10,0
+  class Application < Rails::ApplicationBackend::Application10,0
+
+app/jobs/application_job.rb,58
+class ApplicationJob < ActiveJob::BaseApplicationJob1,0
+
+app/mailers/application_mailer.rb,67
+class ApplicationMailer < ActionMailer::BaseApplicationMailer1,0
+
+app/models/application_record.rb,67
+class ApplicationRecord < ActiveRecord::BaseApplicationRecord1,0
+
+app/models/metric.rb,44
+class Metric < ApplicationRecordMetric1,0
+
+app/controllers/api/metrics/averages_controller.rb,249
+class Api::Metrics::AveragesController < ApplicationControllerAveragesController1,0
+class Api::Metrics::AveragesController < ApplicationControllerApi::Metrics::AveragesController1,0
+  def indexindex2,0
+    def filter_paramsfilter_params18,0
+
+app/controllers/api/metrics_controller.rb,240
+class Api::MetricsController < ApplicationControllerMetricsController1,0
+class Api::MetricsController < ApplicationControllerApi::MetricsController1,0
+  def indexindex2,0
+  def createcreate8,0
+  def metric_paramsmetric_params20,0
+
+app/controllers/application_controller.rb,78
+class ApplicationController < ActionController::APIApplicationController1,0
+
+app/channels/application_cable/channel.rb,177
+module ApplicationCableApplicationCable1,0
+  class Channel < ActionCable::Channel::BaseChannel2,0
+  class Channel < ActionCable::Channel::BaseApplicationCable::Channel2,0
+
+app/channels/application_cable/connection.rb,195
+module ApplicationCableApplicationCable1,0
+  class Connection < ActionCable::Connection::BaseConnection2,0
+  class Connection < ActionCable::Connection::BaseApplicationCable::Connection2,0
+
+test/test_helper.rb,101
+class ActiveSupport::TestCaseTestCase5,0
+class ActiveSupport::TestCaseActiveSupport::TestCase5,0
+
+test/models/metric_test.rb,58
+class MetricTest < ActiveSupport::TestCaseMetricTest3,0
+
+test/controllers/metrics_controller_test.rb,88
+class MetricsControllerTest < ActionDispatch::IntegrationTestMetricsControllerTest3,0
+
+test/channels/application_cable/connection_test.rb,206
+class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCaseConnectionTest3,0
+class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCaseApplicationCable::ConnectionTest3,0
+
+db/migrate/20221111100621_create_metrics.rb,93
+class CreateMetrics < ActiveRecord::Migration[7.0]CreateMetrics1,0
+  def changechange2,0
