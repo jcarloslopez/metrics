@@ -11,7 +11,7 @@ This project uses docker compose to bootstrap a postgresql database, the rails b
 
 Clone this repo and enter the directory
 
-`$ git clone git@github.com:jcarloslopez/technical-test.git && cd technical-test`
+`$ git clone git@github.com:jcarloslopez/metrics.git && cd metrics`
 
 Now we need to install the dependencies from both code containers. Even though this command looks like it will only install the frontend ones it will also install the backend ones because the frontend container has a depends_on configuration enabled on the backend:
 
